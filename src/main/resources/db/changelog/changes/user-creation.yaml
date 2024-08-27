@@ -1,0 +1,25 @@
+databaseChangeLog:
+  -  changeSet:
+       id:  user-creation
+       author:  Ronit
+       changes:
+         -  createTable:
+              columns:
+                - column:
+                    name: id
+                    type: int
+                    constraints:
+                      nullable: false
+                      primaryKey: true
+                      primaryKeyName: user_pkey
+                - column:
+                    name:  firstname
+                    type:  varchar(255)
+                - column:
+                    name: lastname
+                    type: varchar(255)
+                - column:
+                    name: email
+                    type: varchar(255)
+              schemaName:  public
+              tableName:  user_table
