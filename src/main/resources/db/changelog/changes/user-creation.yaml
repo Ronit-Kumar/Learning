@@ -13,8 +13,8 @@ databaseChangeLog:
                       primaryKey: true
                       primaryKeyName: user_pkey
                 - column:
-                    name:  firstname
-                    type:  varchar(255)
+                    name: firstname
+                    type: varchar(255)
                 - column:
                     name: lastname
                     type: varchar(255)
